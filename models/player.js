@@ -1,7 +1,7 @@
 'use strict';
 
 import mongoose from 'mongoose';
-
+mongoose.Promise = Promise;
 let Schema = mongoose.Schema;
 
 let jugadorSchema = new Schema({

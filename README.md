@@ -3,7 +3,6 @@
 ### Gestion Tecnologica - 2018_3
 
 #### Juego - Servidor - Juego Rest
-
 #### Pokemon - Basico
 
 Juego Construido para cargar en un cliente-servidor con basea una API

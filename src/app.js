@@ -5,6 +5,8 @@ import bodyParser from 'body-parser';
 import methodOverride from 'method-override';
 import mongoose from 'mongoose';
 
+mongoose.Promise = Promise;
+
 import apiGameRoutes from './routes/game';
 
 import configConection from '../config/connection';
