@@ -4,6 +4,7 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import methodOverride from 'method-override';
 import mongoose from 'mongoose';
+import cors from 'cors';
 
 mongoose.Promise = Promise;
 
@@ -12,6 +13,8 @@ import apiGameRoutes from './routes/game';
 import configConection from '../config/connection';
 
 let app = express();
+
+app.use(cors());
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());

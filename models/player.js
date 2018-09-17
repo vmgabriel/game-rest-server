@@ -16,6 +16,8 @@ let jugadorSchema = new Schema({
             }
         }
     },
+    dinero: { type: Number, default: 1000 },
+    dineroMaximo: {type: Number, default: 1000 },
     createdAt: { type: Date, default: Date.now },
     lastSesion: { type: Date, default: Date.now }
 });
