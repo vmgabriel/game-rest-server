@@ -6,6 +6,7 @@ let Schema = mongoose.Schema;
 
 let jugadorSchema = new Schema({
     alias: { type: String, required: true },
+    contra: {type: String, required: true },
     codigo: { type: Number, required: true },
     correo: {
         type: String,
@@ -18,6 +19,11 @@ let jugadorSchema = new Schema({
     },
     dinero: { type: Number, default: 1000 },
     dineroMaximo: {type: Number, default: 1000 },
+    x: {type: Number},
+    y: {type: Number},
+    mundoX: {type: Number},
+    mundoY: {type: Number},
+    mundo: {type: String},
     createdAt: { type: Date, default: Date.now },
     lastSesion: { type: Date, default: Date.now }
 });

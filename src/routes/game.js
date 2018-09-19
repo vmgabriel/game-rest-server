@@ -45,4 +45,26 @@ api.delete('/jugadores/:id', md_auth.ensureAuth, (req, res) => {
         .catch(err => {res.status(500).json({'message': err});});
 });
 
+api.get('/puntajesaltos', md_auth.ensureAuth, (req, res) => {
+    Jugador.find()
+        .sort({dineroMaximo: -1})
+        .then(players => {
+            res.status(200).json(players);
+        }).catch(err => {
+            console.log(err);
+            res.status(500).json({'message': "Error: "+err});
+        });
+});
+
+api.post('/sesion', md_auth.ensureAuth, (req, res) => {
+    Jugador.find(req.body)
+        .then(doc => {
+            res.status(200).json(doc);
+        })
+        .catch(err => {
+            console.log(err);
+            res.status(500).json({'message': "Error: "+err});
+        });
+});
+
 module.exports = api;
