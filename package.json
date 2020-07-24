@@ -21,7 +21,7 @@
         "moment": "^2.22.2",
         "mongoose": "^5.2.13",
         "mongoose-pagination": "^1.0.0",
-        "npm": "^6.4.1",
+        "npm": "^6.14.6",
         "socket.io": "^2.1.1"
     },
     "devDependencies": {
