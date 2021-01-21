@@ -22,7 +22,7 @@
         "mongoose": "^5.2.13",
         "mongoose-pagination": "^1.0.0",
         "npm": "^6.4.1",
-        "socket.io": "^2.1.1"
+        "socket.io": "^2.4.0"
     },
     "devDependencies": {
         "babel-cli": "^6.26.0",
